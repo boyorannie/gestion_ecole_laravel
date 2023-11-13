@@ -13,7 +13,11 @@ return new class extends Migration
     {
         Schema::create('eleves', function (Blueprint $table) {
             $table->id();
-            $table->
+            $table->string('nom');
+            $table->string('prenom');
+            $table->date('date_naissance');
+            $table->string('classe');
+            $table->string('sexe');
             $table->timestamps();
         });
     }
